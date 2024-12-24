@@ -6,17 +6,14 @@ namespace WindowsFormsApplication15
 {
     public partial class Form1 : Form
     {
-        // Çalışanlar listesini tutacak
         List<Personel> personelListesi = new List<Personel>();
 
         public Form1()
         {
             InitializeComponent();
-
-            // Departmanları ComboBox'a ekliyoruz
             comboBoxDepartman.Items.Add("Otomobil Satışı");
             comboBoxDepartman.Items.Add("Yedek Parça Satışı");
-            comboBoxDepartman.SelectedIndex = 0; // İlk seçeneği varsayılan olarak seç
+            comboBoxDepartman.SelectedIndex = 0;
         }
 
         // Ekle butonuna tıklanınca çalışacak metod
